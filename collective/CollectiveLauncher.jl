@@ -1,7 +1,7 @@
 module CollectiveLauncher
 
 using Collective
-const words = wordlist(open(".\\collective\\113809of.fic"))
+const words = wordlist(open(joinpath(pkgdir(Collective), "data", "113809of.fic")))
 corpus = Corpus(words)
 
 # puzzle = ["questionable", "businesswoman", "exhaustion", "discouraged", "communicated", "hallucinogen", "sequoia"]
